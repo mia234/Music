@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="player.css">
+    <style>
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<audio id="id-audio-player" src="audio/1.mp3" data-active="0"></audio>
+<div class='player'>
+    <div class='player_inner'>
+        <div class='player_inner__top'>
+            <div class='t_left'>
+                <!--         菜单的按钮  -->
+                <i class='fa fa-bars'></i>
+            </div>
+            <div class='t_mid'>
+                <h1>CUB3DPlayer</h1>
+            </div>
+            <div class='t_right'>
+                <i class='fa fa-search'></i>
+            </div>
+        </div>
+        <div class='player_inner__middle'>
+            <input class='trigger--4' name='omni' type='radio'>
+            <input class='trigger--3' name='omni' type='radio'>
+            <input class='trigger--2' name='omni' type='radio'>
+            <input class='trigger--1' name='omni' type='radio'>
+            <input class='empty'>
+            <div class='cube'>
+                <div class='cube_inner'>
+                    <div class='cube_inner__front'>
+                        <div class='bars none'>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                            <div class="bars_bar"></div>
+                        </div>
+                        <div class='details'>
+                            <div class='details_album'></div>
+                            <!--               获取每次播放的歌曲   -->
+                            <div class="menu-slide-audio" data-audio="3">
+                                <div class="menu-content" data-active="0" data-path="audio/1.mp3">
+                                    Song From A Secret Garden
+                                </div>
+                                <div class="menu-content" data-active="1" data-path="audio/2.mp3">
+                                    Refrain
+                                </div>
+                                <div class="menu-content" data-active="2" data-path="audio/3.mp3">
+                                    天空之城
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='cube_inner__left'>
+                        <div class='options'>
+                            <i class='fa fa-headphones'></i>
+                            <i class='fa fa-redo-alt'></i>
+                            <i class='fa fa-random' id="id-fa-random"></i>
+                            <i class='fa fa-fast-forward'></i>
+                            <i class='fa fa-music'></i>
+                        </div>
+                    </div>
+                    <div class='cube_inner__right'>
+                        <div class='volume'>
+                            <i class='fa fa-volume-up'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='r_trim'></div>
+            <div class='l_trim'></div>
+            <div class='shadow_right'></div>
+            <div class='shadow_left'></div>
+        </div>
+        <div class='player_inner__bottom'>
+            <div class='options'>
+                <i class='fa fa-repeat'></i>
+                <i class='fa fa-random' id="id-farandom"></i>
+            </div>
+            <div class='playbar'>
+<!--                 进度条    -->
+                <div class='playbar_inner'>
+<!--                     小圆点  -->
+                    <div class="dot"></div>
+                </div>
+                <div class='playbar_left'>
+                </div>
+                <div class='playbar_right'>
+                </div>
+            </div>
+            <div class='controls'>
+                <div class='controls_left'>
+                    <i class='fa fa-step-backward'></i>
+                </div>
+                <div class='controls_middle'>
+                    <!--             播放按钮  -->
+                    <i class='fa fa-play-circle fa-play'></i>
+                    <!--            暂停按钮  -->
+<!--                    <i class='fa fa-pause-circle fa-play none'></i>-->
+                </div>
+                <div class='controls_right'>
+                    <i class='fa fa-step-forward'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="ceshi.js"></script>
+</body>
+</html>
